@@ -1,1 +1,50 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="font center"> 
+        <span id="clock" class="hidden" style="font-size: 130px;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;"></span>
+        <h1 id="question" style="font-size: 80px;
+        color: white;">What is your name?</h1>
+        <form id="login-form">
+        <input required type="text" maxlength="15" style="text-align: center;
+        background: transparent;
+        font-size: 50px;
+        color: white;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;"/>
+        <!-- <input type="submit" value="Log In"/> -->
+        </form>
+        <div id="display-user" style="font-size: 50px;
+        color: white;"></div>
+    </div>
+    <div class = "hidden" id="todo-display">
+        <ul class="font" style="font-size: 17px;"></ul>
+        <form id="todo-form" style="font-size: bold;">
+            <input type="text" placeholder="New Todo" style="font-size: 33px;
+            transition-timing-function: ease-in-out;">
+        </form>
+    </div>
+    <div class="hidden font" id="weather" >
+        <span></span>
+        <br>
+        <span></span>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
