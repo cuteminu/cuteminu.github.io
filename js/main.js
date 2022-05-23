@@ -17,9 +17,9 @@ const HIDDEN_CLASS = "hidden"
 function getTimebasedQuote() {
     const time = new Date()
     const hour = time.getHours()
-    if (hour < 12 && hour > 6) {
+    if (hour < 12 && hour >= 6) {
         return welcomeQuotes[0][Math.floor(Math.random() * 3)]
-    } else if (hour < 20 && hour > 12) {
+    } else if (hour < 20 && hour >= 12) {
         return welcomeQuotes[1][Math.floor(Math.random() * 4)]
     } else {
         return welcomeQuotes[2][Math.floor(Math.random() * 3)]
